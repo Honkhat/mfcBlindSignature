@@ -6,8 +6,6 @@
 #include "mfcBlindSignature.h"
 #include "mfcBlindSignatureDlg.h"
 #include "afxdialogex.h"
-#include "VARCONFIGDLG.h"
-#include "HelpImpFile.h"
 //hj added later 
 #include <sstream>
 #include <iomanip>
@@ -93,6 +91,7 @@ BEGIN_MESSAGE_MAP(CmfcBlindSignatureDlg, CDialogEx)
 	ON_COMMAND(ID_INVAR, &CmfcBlindSignatureDlg::OnInvar)
 	ON_COMMAND(ID_32774, &CmfcBlindSignatureDlg::On32774)
 	ON_COMMAND(ID_HELP_FORMAT, &CmfcBlindSignatureDlg::OnHelpFormat)
+	ON_COMMAND(ID_SignTool, &CmfcBlindSignatureDlg::OnSigntool)
 END_MESSAGE_MAP()
 
 
@@ -614,4 +613,13 @@ void CmfcBlindSignatureDlg::OnHelpFormat()
 	//popup the HelpImpFile Dialog
 	HelpImpFile dlg;
 	dlg.DoModal();
+}
+
+
+void CmfcBlindSignatureDlg::OnSigntool()
+{
+	//call the BlindSignTool Dlg
+	CBlindSignTool* pDlg=new CBlindSignTool();
+	pDlg->Create(IDD_DLG_TOOL,this);
+	pDlg->ShowWindow(SW_SHOW);
 }

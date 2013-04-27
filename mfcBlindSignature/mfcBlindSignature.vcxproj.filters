@@ -25,6 +25,9 @@
     <None Include="res\seal.ico">
       <Filter>资源文件</Filter>
     </None>
+    <None Include="C:\Users\acer\Desktop\cover.bmp">
+      <Filter>资源文件</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="mfcBlindSignature.h">
@@ -48,6 +51,21 @@
     <ClInclude Include="HelpImpFile.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="BlindSignTool.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SideAskDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SideAskSendDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SideAskRecv.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SideSignDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="mfcBlindSignature.cpp">
@@ -63,6 +81,21 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="HelpImpFile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BlindSignTool.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SideAskDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SideAskSendDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SideAskRecv.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SideSignDlg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

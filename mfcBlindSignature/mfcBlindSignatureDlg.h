@@ -11,6 +11,10 @@ using CryptoPP::RSA;
 using CryptoPP::Integer;
 #include <osrng.h>
 using CryptoPP::AutoSeededRandomPool;
+//hj added
+#include "VARCONFIGDLG.h"
+#include "HelpImpFile.h"
+#include "BlindSignTool.h"
 
 // CmfcBlindSignatureDlg ¶Ô»°¿ò
 class CmfcBlindSignatureDlg : public CDialogEx
@@ -58,4 +62,5 @@ public:
 	afx_msg void OnInvar();
 	afx_msg void On32774();
 	afx_msg void OnHelpFormat();
+	afx_msg void OnSigntool();
 };
